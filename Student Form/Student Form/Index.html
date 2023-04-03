@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mycontainer">
+        <form id="form1">
+            <div class="myrow">
+                <div class="mycol">
+                    <label for="Sentence">Sentence</label><br />
+                    <textarea id="Sentence" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="myrow">
+                <div class="mycol">
+                    <input type="button" id="btnSubmit" value="Send" />
+                </div>
+            </div>
+        </form>
+        <div id="showResult">
+            <div class="myrow">
+                <table id="myTable">
+                    <tbody>
+                        <tr>
+                            <th>Sentence:</th>
+                            <td id="tdSentence"></td>
+                        </tr>
+                        <tr>
+                            <th>Number of character:</th>
+                            <td id="tdNoChar"></td>
+                        </tr>
+                        <tr>
+                            <th>Number of words:</th>
+                            <td id="tdNoWord"></td>
+                        </tr>
+                        <tr>
+                            <th>Reversed string: </th>
+                            <td id="tdReverse"></td>
+                        </tr>
+                        <tr>
+                            <th>Uppercase string:</th>
+                            <td id="tdToUpper"></td>
+                        </tr>
+                        <tr>
+                            <th>Lowercase string: </th>
+                            <td id="tdToLower"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
